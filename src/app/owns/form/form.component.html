@@ -1,0 +1,23 @@
+<div align="center">
+    <form #simpleform="ngForm" (ngSubmit)="getUserValue(simpleform.value)">
+       Name:- <input type="text" ngModel  name="name" placeholder="name"><br><br>
+       Age:- <input type="text" ngModel name ="age" placeholder="age"><br><br>
+       Email-Id:- <input type="text" ngModel name="email" placeholder="email"><br><br>
+       Password:- <input type="password" ngModel name="password" placeholder="password"><br><br>
+       <button >OnClick</button>
+    </form>
+
+    <table>
+        <tr>
+            <th>Name:-</th>
+
+        </tr>
+       
+        <tr>
+            <td>
+                <input type="text" value={{val}} readonly/>
+            </td>
+        </tr>
+    </table>
+
+</div>

@@ -1,0 +1,36 @@
+<!-- <ng-template #ifcon ngIf="show then #ifcon else elsecon">
+    <h1>
+        <p>this is if condition</p>
+    </h1>
+</ng-template>
+
+<ng-template #elsecon>
+    <h1>
+        <p>this is else condision</p>
+    </h1>
+</ng-template> -->
+
+<ng-template [ngIf]="color=='red'">
+    <h1>
+        <p style="color: red;">this is red color</p>
+    </h1>
+</ng-template>
+
+<ng-template [ngIf]="color=='blue'">
+    <h1>
+        <p style="color: blue;">this is blue color</p>
+    </h1>
+</ng-template>
+
+<ng-template [ngIf]="color=='green'">
+    <h1>
+        <p style="color: rgb(33, 240, 33);">this is green color</p>
+    </h1>
+</ng-template>
+
+<div [ngSwitch]="color">
+    <input *ngSwitchCase="'red'"  style="color: red;" type="text" value="RED"/>
+    <input *ngSwitchCase="'green'" style="color: green;" type="text" value="GREEN"/>
+    <input *ngSwitchCase="'blue'" style="color: blue;" type="text" value="BLUE"/>
+    <input *ngSwitchCase="'black'" style="color: black;" type="text" value="BLACK"/>
+</div>

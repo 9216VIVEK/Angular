@@ -1,0 +1,21 @@
+<div align="center">
+    <h2>For Loop in Angular</h2>
+    
+    <p *ngFor="let item of employee">
+        {{item}}
+    </p>
+
+    <table border="2">
+        <tr style="background-color: rgb(85, 240, 105);">
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>EMAIL</th>
+        </tr>
+        <tr *ngFor="let items of employeeArrObj" style="background-color: rgb(138, 138, 245);">
+            <td align="center">{{items.name}}</td>
+            <td align="center">{{items.age}}</td>
+            <td align="center">{{items.email}}</td>
+        </tr>
+    </table>
+</div>
+
