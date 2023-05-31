@@ -8,13 +8,13 @@ import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 })
 export class MaterialsComponent {
   disable: boolean = true;
-  filteredOptions: string[] = ['One', 'Two', 'Three'];
+  filteredOptions: string[] = ['One', 'Two', 'Three','Four','Five','Six'];
 
   myControl = {
     enable : ()=> {this.disable=false},
     disable : ()=>{this.disable=true}
   }
-  
+
   change(){
     this.disable =!this.disable;
   }
