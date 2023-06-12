@@ -10,21 +10,20 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MaterialsComponent } from './materials/materials.component';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
-
-
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 @NgModule({
   declarations: [
     LoginComponent,
     LoopsComponent,
     FormComponent,
-    MaterialsComponent
+    MaterialsComponent,
+    ReactiveformComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     MatAutocompleteModule,
-    FormsModule,
     MatFormFieldModule,
     MatInputModule,
     MatAutocompleteModule,
@@ -37,7 +36,8 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     LoginComponent,
     LoopsComponent,
     FormComponent,
-    MaterialsComponent
+    MaterialsComponent,
+    ReactiveformComponent
   ]
 })
 export class OwnsModule { }

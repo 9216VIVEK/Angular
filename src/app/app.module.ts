@@ -8,19 +8,21 @@ import{UsersModule} from './users/users.module';
 import{OwnsModule} from './owns/owns.module';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoPageComponent } from './no-page/no-page.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-
+    NoPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     UsersModule,
     OwnsModule,
-    BrowserAnimationsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

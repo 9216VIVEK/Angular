@@ -6,12 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent {
-   val:any = "";
+   val:string = "";
 
-  getUserValue(value: any): void{
-    console.warn(value.email);
-    console.log(value.password);
-    this.val = value.email;
+  getUserValue = (value: any)=>{
 
+    console.warn(value.email)
+    console.log(value.password)
+    this.val = value.email
+    
   }
 }
