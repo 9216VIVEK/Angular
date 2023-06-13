@@ -14,6 +14,7 @@ const routes: Routes = [
     component :HeaderComponent,
     children :[
       {
+        
         path:'pipe',
         component:PipeComponent
       },
